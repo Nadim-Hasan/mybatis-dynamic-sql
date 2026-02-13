@@ -61,11 +61,8 @@ public class FragmentCollector {
     }
 
     public Map<String, Object> parameters() {
-    return fragments.stream()
-            .map(FragmentAndParameters::parameters)
-            .collect(LinkedHashMap::new, LinkedHashMap::putAll, LinkedHashMap::putAll);
-}
-
+        return Collections.unmodifiableMap(parameters);
+    }
 
     public boolean hasMultipleFragments() {
         return fragments.size() > 1;

@@ -17,7 +17,3 @@ buildNumber.properties
 .idea
 *.iml
 .github/keys/
-.nondex/
-after_fix.log
-before_fix.log
-target/
